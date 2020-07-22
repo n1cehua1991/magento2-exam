@@ -1,0 +1,332 @@
+1. The merchant will sell at 2 different countries, each with different payment methods. Which setup should you build?
+A. 1 website 2 store views
+B. 2 websites 2 store views
+C. 1 website 1 store view
+D. 1 website 2 languages
+
+
+2. Which three scopes of System Configuration?
+A. Store View
+B. Store
+C. Website
+D. Language
+E. Area
+
+
+3. A module MyModule needs to send notifications to customers only when the account was modified from a mobile app using the REST web APIs. You decided to implement an observer for customer_save_after_data_object event. In which file do you declare the observer?
+
+
+A. etc/webapi_rest/events.xml
+C. etc/webapi/rest_events.xml
+D. etc/events.xml
+
+
+
+4. How to create a block with template view.phtml
+A. <block class="Magento\Framework\View\Element\Template" name="myBlock" template="MyCompany_MyModule::view.phtml" />
+B. <block class="Magento\Framework\View\Element\Template" name="myBlock" template="view.phtml" scope="MyCompany_MyModule" />
+C. <block class="Magento\Framework\View\Element\Template" name="myBlock" template="view.phtml" module="MyCompany_MyModule" />
+"D.
+<block class=""Magento\Framework\View\Element\Template"" name=""myBlock"" template=""view.phtml"">
+<arguments>
+<argument name=""module"">MyCompany_MyModule</argument>
+</arguments>
+</block>"
+
+
+
+
+5. You have just made some changes of the REST api, and need to clear the cache config_webservice. Keeping site performance in mind, what will you do?
+A. cache:refresh config_webservice
+B. cache:clean config_webservice
+C. cache:flush
+D. 
+
+
+
+
+6. The client wants to upload a csv file to import new entity data in store configuration. Which is needed
+A. <frontend_model>....</frontend_model>
+B. <backend_model>....</backend_model>
+C. <upload_model>....</upload_model>
+D. <source_model>....</source_model>
+
+
+
+7. A customer quote has only 1 downloadable product. Which of the below is true
+A. There is no shipping address
+B. There is no billing address
+C. There is no address
+D. Shipping address is replaced by a download url
+
+
+
+
+
+"8. When adding a new class to __construct()
+public function __construct(
+    ...
+    \Magento\Store\Model\StoreManagerInterface $storeManager,
+    ...
+)
+there is an error ....
+What do you need to do to fix this"
+A. Clear cache
+B. Deploy static content
+C. Delete generated/
+D. Cannot add a class this way
+
+
+
+
+9. Which of these is true when there is an aroundPlugin?
+A. beforePlugin methods will be suspended
+B. afterPlugin methods will be suspended
+C. Both beforePlugin and afterPlugin methods will be suspended
+D. The original method will be suspended.
+
+
+10. In Magento, product attribute can have value in scopes. Which technique makes this possible?
+A. Extension attributes
+B. EAV entity architecture
+C.
+D.
+
+
+
+
+11. How to add a new link to the My Account sidebar?
+A. Add in layout
+B. Modify customer_account ui component
+C. Create new ui component to be a child of customer_account ui component
+D.
+
+
+12. What will happen when you call save() on collection?
+A. All element in the collection will be saved with 1 SQL query INSERT ... ON DUPLICATE ...
+B. Loop through all element in collection and call save() with each element
+C.
+D.
+
+
+
+
+13. Which methods below are used to filter the product collection? Choose 3
+A. $collection->addFieldToFilter('...','...');
+B. $collection->addFilter('...','...');
+C. $collection->addAttributeToSelect('...','...');
+D. $collection->addAttributeToFilter('...','...');
+
+
+
+14. What is the main purposes of the Resource Model?
+A. To create, retrieve, update and delete entity data from database
+B. To list all entity models
+C. To map entity with one or multiple rows in database
+D.
+
+
+
+"15. You've created a new page in admin at url .... What needs to be done for the url to work?
+Choose 2"
+A. etc/adminhtml/router.xml
+B. etc/adminhtml/di.xml
+C. etc/addminhtml/menu.xml
+D. etc/adminhtml/routes.xml
+
+16. What scopes are available for customer attributes?
+A . Global only
+B . Website only
+C . Global and Website
+D . Global, Website and Store
+
+17. persist an entity to database 
+Resource Model
+
+18. Log all action in Magento/Customer/Api/Data/AddressInterface.php::save() function
+Plugin before save()
+Obsever ...after_save
+
+19. customer login authorized. email and password is match with database. How to check addtional data in process
+
+20. The module MyCompany_MyModule will add a new page in the admin interface to display
+a custom entity in a grid.
+You created a controller for this grid
+\MyCompany\MyModule\Controller\Adminhtml\CustomEntity\Index
+Which two actions are required to make the new page accessible at the
+https://your.store.base.url/admin/my_module/custom_entity URL? (Choose two.)
+A. Register my_module route for the AdminRouter in MyCompany/MyModule/etc/adminhtml/di.xml
+B. Create a new menu item in MyCompany/MyModule/etc/adminhtml/menu.xml
+C. Specify the my_module/custom_entity URL using a @route annotation in the action controller execute() method
+D. Register my_module route in MyCompany/MyModule/etc/adminhtml/routes.xml
+
+
+"21. You are developing a module and need to add another column to a table introduced by another module 
+MyCompany_MyModulevia db schema."
+
+How do you do that?
+A . Create a etc/db_schema.xml file in your module, add the column and run bin/magentosetup:upgrade
+B . Create a etc/db.xml file in your module, add the column and run bin/magento setup:db­schema:upgrade
+C . Run a command: bin/magento setup:db-schema:upgrade <table> <column definition>
+D . Create a etc/db_schema_whitelist.json file in your module, add the column and run bin/magento setup:upgrade
+
+
+22. check REST endpoint define in module
+A. etc/web_api.xml
+B. etc/rest.xml
+C. All interfaces under Api/ are automatically created an endpoint
+D. etc/webapi_rest/di.xml
+
+23. instead of LoggerInterface default 
+A. Override LoggerInterface in app/etc/di.xml
+B. Create a new preference for LoggerInterface in /MyCompany/MyModule/etc/di.xml
+C. 
+
+24. Website has 1M SKUs, the client wants to have dynamic color theme and page layout on product page based on price. What to do
+
+A. Create dynamic block and choose appropriate template 
+
+"25 Add a new Yes/No field in admin configuration with system.xml. Which of the ones below is needed
+"
+<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+<backend_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+26. The client wants the customer to have 2 default billing address, how to do this
+A. This is out of Magento scope
+B. Go to Configuration -> Customer Configuration and turn Allow multiple billing address = Yes
+C. Create checkout attribute billing_adddress2 and modify cart/checkout page to use it
+D. Add column billing_address2 to customer_entity table and modify cart/checkout page to use it
+
+"27. Client wants the product URL to have category url, how to do this
+"
+A. set config catalog/seo/category_url 'Yes" 
+
+28. rerun data patch 
+A. delete in table patch_list 
+
+"29.<add id=""Magento_Sitemap::catalog_sitemap"" title=""Site Map"" translate=""title"" module=""Magento_Sitemap"" sortOrder=""60"" 
+parent=""Magento_Backend::marketing_seo"" action=""adminhtml/sitemap/"" resource=""Magento_Sitemap::sitemap""/> 
+location after Magento Marketing . Choose 2"
+A. sortOrder = 100
+B. parent = "Magento_Backend::marketing_seo"
+C. parent = "Magento_Backend::catalog_sitemap"
+D.
+
+
+"30. What is a valid use case for an aroundplugin?
+
+
+
+"
+A . The execution of the pluginized method must be suppressed
+B . The arguments of the before plugins must be modified
+C . The arguments of the after plugins must be modified
+D . The execution of the beforeand after plugins must be suppressed
+
+31. You are adding a child node to the product.info block using the XML:
+How will this block be rendered?
+A . Child block nodes are automatically rendered as HTML
+B . By calling $block->getChildHtml(‘mynewblock’) in the parent block’s template
+C . The layout is invalid since block elements cannot be nested
+D . Automatically if the block class Custom implements the _toHtml method
+
+
+32. How do you pass an array [‘one’, ‘two] as a parameter to you block using the layout XML arguments directive?
+"A 
+<argument name'""custom_data"" xsi:type=""array"">
+    <item name=""0"" xsi:type=""string"">one</item>
+    <item name=""1"" xsi:type=""string"">two</item>
+</argument>
+
+B <argument name=""custom_data"" xsi:type=""array"" data=""one, two"" />
+
+C argument does not support the array type, instead a serialized string must be passed: 
+<argument name=""custom_data "" xsi:type=""string"">a:2:{i:0;s:3:""one""; i:1;s:3:""two"";} </argument>
+
+D<argument name=""custom_data"" xsi:type=""array"">one,two</argument>"
+A . Option A
+B . Option B
+C . Option C
+D . Option D
+
+
+
+
+
+
+
+
+
+
+33. You need to find all orders in the processing state. You have written the code:
+"$orderRepostory->getList($searchCriteriaBuilder->addFilter('state', 'processing'));
+When you run the code, you get the following exeption:
+
+Uncaught TypeError: Argument 1 passed to Magento\Sales\Model\OrderRepository::getList() must be ann instance
+of Magento\Framework\Api\SearchCriteriaInteface, instance of 
+Magento\Framework\Api\SearchCriteriaBuilder given."
+How do you resolve the exception?
+A . Use dependency injection to load an instance of the SearchCriteria class
+B . Change the getList parameter to: $searchCriteraBuilder->addFilter(‘state’,’processing’)->create()
+C . Clear generated code to get a new version of SearchCriteriaBuilder
+D . Specify a preference in di.xml to map SearchCriteriaBuilder to SearchCriteriaInterface
+
+
+"34. While reviewing a layout file named sales_order_view.xml you notice the element 
+<update handle=”customer_account”/>"
+
+What is the purpose of this element?
+A . Replaces the customer_account handle with sales_order_view
+B . Nothing, this element has been deprecated
+C . Adds the customer_account handle to the page’s handles list
+D . Updates the current page handle to customer_account
+
+
+35. fontName admin 
+A app/etc/env.php
+B composer.json
+C app/etc/di.xml
+
+
+36. Which method of a Magento resource model will remove a record from the database?
+A . remove
+B . erase
+C . clean
+D . delete
+
+
+37. Determine the difference between Container and Block ?
+
+
+38. When you access a url, page content response is 404 not found. What files do you need to check (3 options)
+A. composer.json
+B. Controller file path
+C. app/etc/config.php
+D. router.xml
+E. module di.xml
+
+39. What class handle admin login?
+
+40. Customer first name length is 3, client want to change to 2. How do you do?
+"Update field
+'validate_rules' => '{""max_text_length"":255,""min_text_length"":2}'
+Update field
+'frontend_class' => 'validate-length minimum-length-2'
+Update field
+'validate_rules' => '{""max_length"":255,""min_length"":2}'
+Update field
+'validatation_rules' => '{""max_text_length"":255,""min_text_length"":2}'"
+41. How do you get layout handle list when access a page
+"Create plugin for class \Magento\Framework\App\View, method beforeGenerateLayoutXml()
+Create plugin for class \Magento\Framework\App\View, method afterLoadLayoutHandles()
+Inject \Magento\Framework\App\ViewInterface and call getLayout()->getUpdate()->getHandles()
+Create observer to “controller_action_layout_render_before”, then $observer->getLayout()"
+
+
+
+
+1 số link em thao khảo 
+https://blog.willfeeling.com/2019/06/24/magento2-dump-questions-package-1/
+https://blog.willfeeling.com/2019/06/26/package-2/
+https://www.exam4training.com/which-method-of-a-magento-resource-model-will-remove-a-record-from-the-database/
+https://www.goconqr.com/quiz/17502643/magento-2-certified-associate-developer-exam-test
+https://www.goconqr.com/quiz/18961090/associate-developer-exam-test-pool-02-magento-2-certified-
